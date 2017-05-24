@@ -1,0 +1,8 @@
+<div>
+    <input type = "checkbox" [(ngModel)]="tarea.realizada">
+    <span [style.textDecoration]="tarea.realizada?'line-through':'none'">
+                {{tarea.descripcion}}
+
+    </span>
+     <button (click)="eliminarTarea()">Eliminar</button>
+    </div>

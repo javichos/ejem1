@@ -1,3 +1,16 @@
 <h1>
   {{title}}
 </h1>
+
+<p>Lista de Tareas
+    <tarea **ngFor="let tarea of tareas"  [tarea]="tarea" (eliminar)="eliminarTarea(tarea)"
+</p>
+
+    <input #nuevo type="text">
+  <button (click)="agregarTarea(nuevo.value); nuevo.value=''">Agregar</button>
+
+
+<p><h1>{{ nombre }}</h1>
+</p>
+
+
